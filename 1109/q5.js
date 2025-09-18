@@ -29,7 +29,7 @@ while (true) {
         let indice = parseInt(prompt("Digite o índice do filme (0 a 5) para avaliar:"))
         if (indice >= 0 && indice < filmes.length) {
             let novaNota = parseFloat(prompt("Digite a nova nota para o filme (0 a 10):"))
-            filmes[indice].nota = (filmes[indice].nota + novaNota) / 2 // Calcula a média das notas
+            filmes[indice].nota = (filmes[indice].nota + novaNota) / 2 
             console.log("Nota média atualizada para o filme " + filmes[indice].nome + ": " + filmes[indice].nota.toFixed(2))
         } else {
             alert("Índice inválido!")
@@ -42,8 +42,8 @@ while (true) {
         if (indice >= 0 && indice < filmes.length) {
             let novoNome = prompt("Digite o novo nome do filme:")
             let novaNota = parseFloat(prompt("Digite a nova nota do filme (0 a 10):"))
-            filmes[indice].nome = novoNome // Atualiza o nome do filme
-            filmes[indice].nota = novaNota // Atualiza a nota do filme
+            filmes[indice].nome = novoNome 
+            filmes[indice].nota = novaNota 
             console.log("Dados do filme atualizados:")
             console.log("Nome do filme: " + filmes[indice].nome)
             console.log("Nota do filme: " + filmes[indice].nota)
@@ -66,3 +66,4 @@ while (true) {
         alert("Opção inválida!")
     }
 }
+
